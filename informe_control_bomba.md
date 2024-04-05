@@ -39,7 +39,7 @@ Una vez definidos los estados posibles, procederemos a realizar la tabla de tran
 
 Con todo lo anterior se obtiene la siguiente tabla:
 
-![](Tabla_de_Transicion)
+![](Tabla_de_Transicion.png)
 
 Por otro lado, hacemos la siguiente asiganación de los estados:
 - Si EA = B entonces asignamos *bomba_act* = 1.
