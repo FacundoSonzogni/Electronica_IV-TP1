@@ -60,7 +60,7 @@ Podemos implementar la función anterior, usando compuertas lógicas y un FlipFl
 
 ![](Esquematico_Control_Bomba.png)
 
-
+![](jack.png)
                                *****(ESQUEMATICO DEL CIRCUITO)*****
 
 **Nota:** Con el fin de obtener un esquemático más comprensible y prolijo, se optó por incorporar compuertas NOT en cada una de las entradas de las compuertas OR en las que las señales deben aparecer negadas. En la realidad, lo más prudente sería tener cables con cada uno de los valores de las señales y las señales negadas, y simplemente conectar a las compuertas las que correspondan.
