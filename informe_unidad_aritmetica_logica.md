@@ -13,7 +13,7 @@ En particular, en este caso, se tendrán 2 entradas (A y B), cada una de 16 bits
 
 En conclusión, se debe diseñar una ALU que tenga las siguientes configuaraciones para las señales de control, que permiten ejecutar cada una de las operaciones soportadas por la ALU:
 
-                                  ![](Tabla_ALU.png)
+![](Tabla_ALU.png)
 
 ## Metodología de trabajo
 
@@ -33,7 +33,7 @@ De modo que podemos diseñar el restador usando el bloque sumador en el cual se 
 
 A continuación se expone el esquemático correspondiente a las especificaciones anteriores:
 
-                               ![](Esquematico_ALU.png)
+![](Esquematico_ALU.png)
 
 Notamos que el multiplexor permite como señal selectora a UNA señal de 3 bits y NO a 3 señales de 1 bit cada una (como es en este caso). Luego, para salvar esta situación, simplemente se realiza una concatenación de las 3 señales *invB*, *logico*, *and*, con el componente Divisor/Agregador proporcionado por el programa
 
