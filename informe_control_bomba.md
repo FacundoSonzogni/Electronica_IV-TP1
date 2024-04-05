@@ -12,7 +12,7 @@ En la siguiente tabla se describe, brevemente, el funcionamiento de cada uno de 
 
 El obejtivo del controlador de bomba de agua será, entonces, mantener el nivel de agua en el tanque siempre por encima del mínimo nivel especificado por el sensor *tanque_L*, pero a lo sumo hasta llenar el tanque, procurando que no se rebalse. Además. el controlador debe ser capaz de evitar que la bomba se descebe, apagándose si en la cisterna no hay el nivel necesario para bombear el agua.
 
-  **NOTA:**Las bombas de agua se desceban cuando el sistema de bombeo sufre una entrada de aire, ya sea debido a fugas en la tubería, problemas con el sello de la bomba o niveles de agua insuficientes en la fuente de succión. Ésto puede producir desde una reducción en la capacidad de bombeo hasta daños en la bomba o el motor.
+  **NOTA:** Las bombas de agua se desceban cuando el sistema de bombeo sufre una entrada de aire, ya sea debido a fugas en la tubería, problemas con el sello de la bomba o niveles de agua insuficientes en la fuente de succión. Ésto puede producir desde una reducción en la capacidad de bombeo hasta daños en la bomba o el motor.
 
 ## Metodología de trabajo
 
