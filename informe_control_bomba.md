@@ -8,8 +8,8 @@ Se quiere diseñar un "**Controlador de Bomba de Agua**", adecuado al siguiente 
 
 En la siguiente tabla se describe, brevemente, el funcionamiento de cada uno de los sensores:
 
+                        ![](Tabla_Sensores.png)
 
-                             ******(INSERTAR IMAGEN DE LA TABLA DE LOS SENSORES)*****
 
 El obejtivo del controlador de bomba de agua será, entonces, mantener el nivel de agua en el tanque siempre por encima del mínimo nivel especificado por el sensor *tanque_L*, pero a lo sumo hasta llenar el tanque, procurando que no se rebalse. Además. el controlador debe ser capaz de evitar que la bomba se descebe, apagándose si en la cisterna no hay el nivel necesario para bombear el agua.
 
@@ -40,7 +40,7 @@ Una vez definidos los estados posibles, procederemos a realizar la tabla de tran
 
 Con todo lo anterior se obtiene la siguiente tabla:
 
-                       ******(INSERTAR TABLA DE TRANSICIÓN)*******
+                         ![](Tabla_de_Transicion)
 
 Por otro lado, hacemos la siguiente asiganación de los estados:
 - Si EA = B entonces asignamos *bomba_act* = 1.
@@ -49,22 +49,23 @@ Por otro lado, hacemos la siguiente asiganación de los estados:
 - Si ES = NB entonces asignamos *bomba_sig* = 0.
 Y consideraremos como la salida a una señal *bomba* que se conecta directamente a *bomba_act* y toma el valor 1, si se debe encender la bomba y 0, si se debe apagar. Luego, la tabla de Transición con entradas y salida será:
 
-                        ****** (TABLA CON LA SALIDA) *********
+                         ![](Tabla_Transicion_INandOUT.png)
+
 Podemos escribir la lógica de estado siguiente a partir de la tabla anterior, para escribir *bomba_sig* como función de *bomba_act* y de las entradas. Para ello, escribiremos la funcióm en su forma canónica de suma de productos llegando a:
 
-                         ***** (FORMULA DE SDP) *******
+                         ![](Formula_bomba_sig.png)
+
+Donde por simplicidad, se consideró lo siguiente:
+
+                         ![](Referencias_Formula.png)
 
 ## Resultados
 
 Podemos implementar la función anterior, usando compuertas lógicas y un FlipFlop tipo D, como se muestra en la siguiente imagen:
 
-
-![](jack.png)
-                               *****(ESQUEMATICO DEL CIRCUITO)*****
+                        ![](Esquematico_Control_Bomba.png)
 
 **Nota:** Con el fin de obtener un esquemático más comprensible y prolijo, se optó por incorporar compuertas NOT en cada una de las entradas de las compuertas OR en las que las señales deben aparecer negadas. En la realidad, lo más prudente sería tener cables con cada uno de los valores de las señales y las señales negadas, y simplemente conectar a las compuertas las que correspondan.
-
-> Aquí explicas los resultados obtenidos, puedes incluir una imagen del esquemático utilizando la forma `![](archivo_de_imagen.png)` donde `archivo_de_imagen.png` es el resultado de usar la función *Archivo->Exportar->Exportar PNG Grande* del simulador. Es recomendable ejecutar y detener la simulación una vez antes de realizar la exportación.
 
 ## Conclusiones
 
