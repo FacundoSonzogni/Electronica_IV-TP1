@@ -58,7 +58,6 @@ Podemos escribir la lógica de estado siguiente a partir de la tabla anterior, p
 
 Podemos implementar la función anterior, usando compuertas lógicas y un FlipFlop tipo D, como se muestra en la siguiente imagen:
 
-![](Esquematico_Control_Bomba.png)
 
 ![](jack.png)
                                *****(ESQUEMATICO DEL CIRCUITO)*****
