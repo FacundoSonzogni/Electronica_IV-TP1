@@ -4,7 +4,7 @@ Electrónica IV - Trabajo Práctico Nº1 - 2024 - Automatismos y Máquinas Eleme
 
 ## Introducción
 
-Se quiere diseñar un "**Controlador de Bomba de Agua**", adecuado al siguiente funcionamiento: Se cuenta con una instalación de agua corriente en la cual hay una cisterna, un tanque elevado y una bomba de agua que permite impulsar el agua desde la cisterna hacia el tanque. Con tal propósito, se instalaron 2 sensores en la cisterna y dos sensores en el tanque que se activan (es decir, producen un nivel alto de tensión), cuando el nivel de agua se encuentra se encuentra a su altura (o a una altura superior).
+Se quiere diseñar un "**Controlador de Bomba de Agua**", adecuado al siguiente funcionamiento: Se cuenta con una instalación de agua corriente en la cuál hay una cisterna, un tanque elevado y una bomba de agua que permite impulsar el agua desde la cisterna hacia el tanque. Con tal propósito, se instalaron 2 sensores en la cisterna y dos sensores en el tanque que se activan (es decir, producen un nivel alto de tensión), cuando el nivel de agua se encuentra se encuentra a su altura (o a una altura superior).
 
 En la siguiente tabla se describe, brevemente, el funcionamiento de cada uno de los sensores:
 
@@ -16,7 +16,7 @@ El obejtivo del controlador de bomba de agua será, entonces, mantener el nivel 
 
 ## Metodología de trabajo
 
-Para comenzar con el diseño del controlador de la bomba de agua, en primera instancia se alanizaron algunos aspectos importantes de su funcionamiento, que se deben tener en cuenta. En los siguientes párrafos se exponen algunas de éstas consideraciones:
+Para comenzar con el diseño del controlador de la bomba de agua, en primera instancia se analizaron algunos aspectos importantes de su funcionamiento, que se deben tener en cuenta. En los siguientes párrafos se exponen algunas de estas consideraciones:
 
 - La cisterna cuenta con 2 sensores:
   1) *cisterna_L* : Toma el valor 1 cuando el nivel de agua de la cisterna se encuentra al menos a la altura del sensor, y 0 en otro caso. Debajo de este nivel, la Bomba de Agua NO PUEDE ESTAR ENCENDIDA, AUN CUANDO EL TANQUE NO TENGA EL NIVEL DE AGUA DESEADO. Ésto es porque si la cisterna no está llena por lo menos hasta este nivel y se extrae agua de ella para bombearla al tanque, la bomba puede descebarse.
@@ -71,11 +71,11 @@ Podemos implementar la función anterior, usando compuertas lógicas y un FlipFl
 Se realizó una simulación de del circuito anterior, empleando el programa *Digital* y se concluyó que el mismo funciona de acuerdo a lo esperado.
 
 *¿Qué tipo de Máquina es el Controlador de Bomba de Agua?*
-Para responder esta pregunta, debemos tener en cuenta la siguiente:
+Para responder esta pregunta, debemos tener en cuenta lo siguiente:
 
-- **AUTOMATISMO:** Un automatismo es un elemento que es capaz de ejecutar alguna secuencia de operaciones sin la necesidad de una intervención manual. Los automatismos están diseñados para realizar tareas específicas de forma repetitiva y predecible, siguiendo un conjunto de instrucciones o reglas preestablecidas.
-- **MÁQUINA ELEMENTAL:** Una máquina elemental es un dispositivo mecánico simple que realiza una función básica o elemental. No necesariamente implica la automatización.Las máquinas elementales generalmente tienen una funcionalidad específica.
-- **COMPUTADORA:** Una computadora es una máquina que es capaz de realizar varias tareas y puede cambiar de programa. 
+- **AUTOMATISMO:** Un *Automatismo* es un elemento que es capaz de ejecutar alguna secuencia de operaciones sin la necesidad de una intervención manual. Los automatismos están diseñados para realizar tareas específicas de forma repetitiva y predecible, siguiendo un conjunto de instrucciones o reglas preestablecidas. También llamadas *Autómatas*, son máquinas capaces de realizar una secuencia de operaciones en forma automática (Por ejemplo, una Máquina de Estado Finito) y pueden ser sistemas de control de algún dispositivo y/o contar con cierta clase de progaramción primitiva.
+- **MÁQUINA ELEMENTAL:** Una *Máquina Elemental* es una máquina capaz de realizar cálculos aritméticos y/o operaciones lógicas. No necesariamente implica la automatización de esos cálculos, y generalmente debe contar con la posibilidad de introducir los datos de entrada y ver la información de salida (aunque ésto no es estrictamente necesario). El ejemplo más común de una Máquina Elemental es una Calculadora.
+- **COMPUTADORA:** Una *Computadora* es una Máquina (electrónica y digital), que es capaz de realizar varias tareas, ejecutando una serie de instrucciones provenientes de un Programa (CPU), a través de una Unidad Central de Procesamiento que recibe datos de entrada, los cuales traslada, almacena y procesa para convertirlos en información que posteriormente se envía a los puertos de salida. Además una computadora puede Cambiar de programa (es decir, si se cambian las instrucciones, la computadora cambia de tarea). 
 
-Con todo lo anterior, podemos clasificar al controlador de bomba de agua como una *Máquina Elemental*.
+Con todo lo anterior, podemos clasificar al controlador de bomba de agua como un *Automatismo*, pues implica el control de un dispositivo de manera automática y puede implementarse como una máquina de estado finito. Además, NO se trata de una "Máquina Elemental", pues su funcionalidad no es la de realizar cálculos ni operaciones, y tampoco es una "Computadora", pues no permite cambiar de programa.
 
