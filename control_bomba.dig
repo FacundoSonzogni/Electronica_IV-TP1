@@ -96,22 +96,12 @@
     <visualElement>
       <elementName>Not</elementName>
       <elementAttributes/>
-      <pos x="280" y="20"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Not</elementName>
-      <elementAttributes/>
       <pos x="280" y="100"/>
     </visualElement>
     <visualElement>
       <elementName>Not</elementName>
       <elementAttributes/>
       <pos x="280" y="120"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Not</elementName>
-      <elementAttributes/>
-      <pos x="280" y="180"/>
     </visualElement>
     <visualElement>
       <elementName>Not</elementName>
@@ -316,12 +306,8 @@
       <p2 x="280" y="340"/>
     </wire>
     <wire>
-      <p1 x="320" y="20"/>
-      <p2 x="460" y="20"/>
-    </wire>
-    <wire>
       <p1 x="100" y="20"/>
-      <p2 x="280" y="20"/>
+      <p2 x="460" y="20"/>
     </wire>
     <wire>
       <p1 x="80" y="-280"/>
@@ -424,12 +410,8 @@
       <p2 x="460" y="500"/>
     </wire>
     <wire>
-      <p1 x="320" y="180"/>
-      <p2 x="460" y="180"/>
-    </wire>
-    <wire>
       <p1 x="100" y="180"/>
-      <p2 x="280" y="180"/>
+      <p2 x="460" y="180"/>
     </wire>
     <wire>
       <p1 x="220" y="440"/>

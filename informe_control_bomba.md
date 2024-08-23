@@ -66,6 +66,8 @@ Podemos implementar la función anterior, usando compuertas lógicas y un FlipFl
 
 **Nota:** Con el fin de obtener un esquemático más comprensible y prolijo, se optó por incorporar compuertas NOT en cada una de las entradas de las compuertas OR en las que las señales deben aparecer negadas. En la realidad, lo más prudente sería tener cables con cada uno de los valores de las señales y las señales negadas, y simplemente conectar a las compuertas las que correspondan.
 
+**Observación Importante:** El circuito anterior demora un ciclo de reloj entre que se debería apagar y que se apague, de modo que el tanque puede llegar a rebalsar. Para evitar esta situación, se optó por usar un reloj DIFERENTE para el controlador de la bomba, cuya frecuencia sea mayor que la del circuito de simulación (En particular, se usó un reloj con el doble de frecuencia).
+
 ## Conclusiones
 
 Se realizó una simulación de del circuito anterior, empleando el programa *Digital* y se concluyó que el mismo funciona de acuerdo a lo esperado.
